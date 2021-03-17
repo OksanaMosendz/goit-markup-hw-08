@@ -1,0 +1,29 @@
+.btn {
+  @include flexible();
+
+  border-radius: 4px;
+  height: 50px;
+  min-width: 200px;
+  padding: 10px;
+
+  background-color: var(--main-blue);
+    
+  border: none;
+  
+  @include font(700, 16px, 1.87, var(--white), 0.06em);
+  
+  @include main-transition2(box-shadow, background-color); 
+ 
+  &:hover,
+  &:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+}
+
+.hero-btn ,.modal-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,31 @@
+@mixin flexible () 
+{ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($weight, $size, $line-height, $color, $letter-spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;}
+
+@mixin main-transition ($property)
+ { transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+@mixin main-transition2 ($property1, $property2)
+{ transition: $property1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+@mixin main-transition3 ($property1, $property2, $property3)
+{ transition: $property1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property3 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+@mixin main-transition4 ($property1, $property2, $property3, $property4)
+{ transition: $property1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property3 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property4 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
