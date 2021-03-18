@@ -1,89 +1,95 @@
 .header {
   background-color: var(--white);
   border-bottom: 1px solid #ECECEC;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  height: 80px;
-}
-
-.header-container,
-.header-nav,
-.nav-list,
-.header-contacts {
-  display: flex;
-  align-items: center;
-}
-
-.nav__item {
-  margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-}
-
-.contacts__item {
-  margin-right: 50px;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   
-  &:last-child {
-    margin-right: 0;
+    
+  @media (min-width: 1200px) { padding-top: 26px;
+    padding-bottom: 26px;
+    height: 80px;
   }
-
 }
+
+
+// .header-container,
+// .header-nav,
+// .nav-list,
+// .header-contacts {
+//   display: flex;
+//   align-items: center;
+// }
+
+
+// .nav__item {
+//   margin-right: 50px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .contacts__item {
+//   margin-right: 50px;
+    
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;  
+  // padding-top: 32px;
+  // padding-bottom: 32px;  
 
-  @include font(500, 14px, 1.14, var(--title-grey),  0.02em);
+  // @include font(500, 14px, 1.14, var(--title-grey),  0.02em);
   
-  @include main-transition(color);
+  // @include main-transition(color);
   
-  &:hover,
-  &:focus {
-    color: var(--main-blue);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--main-blue);
+  // }
 
 }
 
 .nav__link--current {
-  position: relative;
+  // position: relative;
   color: var(--main-blue);
 
-  &::after {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  // &::after {
+  //   display: inline-block;
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
   
-    content: "";
+  //   content: "";
     
-    width: 100%;
-    height: 4px;
-    background-color: var(--main-blue);
-    border-radius: 2px;
-  }
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: var(--main-blue);
+  //   border-radius: 2px;
+  // }
 }
 
 .header-contacts {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .contacts__link {
-  display: flex;
+  // display: flex;
    
-  @include font(500, 14px, 1.14, var(--text-grey), 0.02em);
+  // @include font(500, 14px, 1.14, var(--text-grey), 0.02em);
 
-  &:hover,
-  &:focus {
-    color: var(--main-blue);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--main-blue);
+  // }
 }
 
-.contacts__icon {
-  align-self: center;
-  margin-right: 10px;  
+// .contacts__icon {
+//   align-self: center;
+//   margin-right: 10px;  
    
-  fill: currentColor;
-}
+//   fill: currentColor;
+// }
