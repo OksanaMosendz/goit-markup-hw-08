@@ -10,10 +10,16 @@
   flex-direction: column;
   text-align: center;  
 
-  @media (min-width: 1200px) {
-    display: flex;
-    justify-content: start;
+  @media (min-width: 768px) {
+    flex-direction: unset;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: start;
+    text-align: left;
   }
 }
 
@@ -21,22 +27,25 @@
   margin-top: 20px; 
   font-style: normal;
   @include font(400, 14px, 1.71, inherit, inherit);
-  
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .address__location {
   margin-top: 0;
   margin-bottom: 8px;
   color: var(--white);
+
+  @media (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-item {
   margin-bottom: 8px;
   
+  @media (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -58,7 +67,12 @@
 
 .join {
   margin-top: 60px;
-  
+ 
+  @media (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 165px;
+  }
+
   @media (min-width: 1200px) {
     margin-left: auto;
   }
@@ -80,14 +94,13 @@
   
   @media (min-width: 1200px) {
     margin-left: 93px; 
+    margin-top: 0;
   }
 }
 
 .sign-form {
-  justify-content: center;
   @media (min-width: 1200px) {
     display: flex;
-    justify-content: end;
   }
 }
 
@@ -101,6 +114,7 @@
   @media (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 
   line-height: 1.25;
