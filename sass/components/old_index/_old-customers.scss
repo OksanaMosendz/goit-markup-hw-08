@@ -1,0 +1,25 @@
+.customers__item {
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.customers__link {
+  @include flexible();
+
+  width: 170px;
+  height: 90px;
+  color: #AFB1B8;
+  border: 1px solid;
+  border-radius: 4px;
+  
+  @include main-transition2(color, outline);
+ 
+  &:hover, 
+  &:focus {
+    color: var(--main-blue);
+    outline: none;
+  }
+}
+
+.customers__icon { 
+  fill: currentColor;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/old-same/old_header.scss"
+    ],
+    "names": [],
+    "file": "old_header.min.css"
+}

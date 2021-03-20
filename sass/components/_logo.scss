@@ -7,24 +7,17 @@
   @media (min-width: 768px) {
     @include font(700, 26px, 1.19,  var(--main-blue), 0.03em);
   }
+}
   
-  
-  &-header { 
-    @media (min-width: 768px) {
-      margin-right: 88px;
-    }
+.logo-header { 
+  @media (min-width: 768px) {
+    margin-right: 88px;
+  }
 
-    @media (min-width: 1200px) { 
-      margin-right: 93px;
-    }
-  } 
-
-  &-footer {
-    
+  @media (min-width: 1200px) { 
+    margin-right: 93px;
   }
 } 
-
-
 
 .logo__part {
   &--black {color: #000000;}

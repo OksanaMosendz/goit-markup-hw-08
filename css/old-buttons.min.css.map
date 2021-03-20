@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/old-same/old-buttons.scss"
+    ],
+    "names": [],
+    "file": "old-buttons.min.css"
+}

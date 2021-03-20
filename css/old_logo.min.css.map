@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/old-same/old_logo.scss"
+    ],
+    "names": [],
+    "file": "old_logo.min.css"
+}
