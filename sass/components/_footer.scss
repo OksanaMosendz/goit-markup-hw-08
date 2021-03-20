@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--dark-back);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Адресс, контакты */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+}
+
+.footer-address { 
+  margin-top: 20px; 
+  font-style: normal;
+  @include font(400, 14px, 1.71, inherit, inherit);
+  
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.address__location {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.address-item {
+  margin-bottom: 8px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+   
+  color: var(--text-white6);
+
+  @include main-transition(color);
+  
+  &:hover,
+  &:focus {
+    color: var(--main-blue);
+  }
+}
+
+/* Присоеденяйтесь */
+
+.join {
+  margin-top: 60px;
+  
+  @media (min-width: 1200px) {
+    margin-left: auto;
+  }
+} 
+
+.join__title, .sign__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+  @include font(700, 14px, 1.14, var(--white), inherit);
+  
+  text-transform: uppercase;
+}
+
+/* Подписывайтесь на рассылку */
+
+.sign {
+  margin-top: 60px;
+  
+  @media (min-width: 1200px) {
+    margin-left: 93px; 
+  }
+}
+
+.sign-form {
+  justify-content: center;
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.sign__input {
+  
+  padding: 15px 16px;
+  height: 50px;
+  width: 450px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  line-height: 1.25;
+  color: var(--text-white6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+ 
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+
+    @include font(400, 16px, 1.25, rgba(255, 255, 255, 0.6), 0.03em);
+  }
+}
+
+.sign__icon { 
+  margin-left: 10px;
+  fill: var(--white);
+}
