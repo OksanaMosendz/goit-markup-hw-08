@@ -122,11 +122,20 @@
   }
 }
 
-.contacts__icon {
+.contacts__icon-tablet {
   fill: currentColor;
   margin-right: 8px;  
   
   @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.contacts__icon-desktop {
+  display: none;
+    
+  @media (min-width: 1200px) {
     margin-right: 10px;  
+    fill: currentColor;
   }
 }
