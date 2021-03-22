@@ -18,8 +18,10 @@
   }
 
   @media (min-width: 1200px) {
-    justify-content: start;
+    // justify-content: start;
     text-align: left;
+    flex-wrap: nowrap;
+    
   }
 }
 
@@ -27,6 +29,7 @@
   margin-top: 20px; 
   font-style: normal;
   @include font(400, 14px, 1.71, inherit, inherit);
+  
 }
 
 .address__location {
@@ -109,9 +112,11 @@
   padding: 15px 16px;
   height: 50px;
   width: 450px;
+
   @media (min-width: 1200px) {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 
   line-height: 1.25;

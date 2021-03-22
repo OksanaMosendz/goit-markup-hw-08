@@ -1,0 +1,32 @@
+.mobile-menu {
+  padding: 48px 40px;
+  
+  width: 480px;
+  height: 796px;
+  background-color: var(--white);
+  border: olive 2px solid;
+}
+
+.pages-nav {
+  margin-bottom: 306px;
+}
+
+.pages__item, .mobile__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pages__link { 
+  @include font(500, 40px, 1.15, var(--title-grey), 0.02em);
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile_tel {
+  
+}
