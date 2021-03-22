@@ -42,31 +42,12 @@
 
 /* Список-портфолио */
 
-.portfolio__item {
-  flex-basis: calc(100% / 3 - 30px);
+// .portfolio__item {
+//   flex-basis: calc(100% / 3 - 30px);
 
-  background-color: var(--white);
-}
+//   background-color: var(--white);
+// }
 
-.portfolio__link {
-  display: block;
-
-  @include main-transition2(box-shadow, outline);
- 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-      0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
-  }
-
-  &:hover .portfolio-thumb::before,
-  &:hover .portfolio-thumb__text {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .portfolio-content {
   padding: 20px 24px;
@@ -112,6 +93,7 @@
 }
 
 .portfolio-thumb__text {
+  
   position: absolute;
   top: 0;
   opacity: 0;
