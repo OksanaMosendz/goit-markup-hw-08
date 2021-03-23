@@ -688,8 +688,56 @@ button, label {
   letter-spacing: 0.02em;
 }
 
+.pages__link--current {
+  color: var(--main-blue);
+}
+
 .mobile-contacts {
   margin-bottom: 64px;
+}
+
+.tel__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.15;
+  color: var(--main-blue);
+  letter-spacing: 0.02em;
+}
+
+.mail__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--text-grey);
+  letter-spacing: 0.02em;
+}
+
+.socials-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.set__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.set__item:last-child {
+  border: none;
+}
+
+.set__link {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-blue);
+  letter-spacing: 0.02em;
 }
 
 .hero {
