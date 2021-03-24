@@ -1,7 +1,13 @@
 .features__item {
-    
+  &:first-child {
+    margin-top: 0;
+  }
+  
   @media (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);
+    &:first-child {
+      margin-top: 30px;
+    }
+    flex-basis: calc(100% / 2 - 30px);  
   }
 
   @media (min-width: 1200px) {
