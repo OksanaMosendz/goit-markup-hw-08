@@ -58,7 +58,6 @@
   }
 }
 
-
 .portfolio__item {
   background-color: var(--white);
   width: 100%;
@@ -76,7 +75,10 @@
 
 
 .portfolio__link {
-  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   @include main-transition2(box-shadow, outline);
  
   &:hover,
@@ -95,6 +97,7 @@
 }
 
 .portfolio-content {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
@@ -115,6 +118,7 @@
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
+  height: 294px;
   
   &::before {
     display: inline-block;
@@ -143,7 +147,7 @@
   
   margin: 0;
   padding: 63px 24px;
-
+ 
   @include font(inherit, 18px, 1.56,  var(--white), inherit);
   
   transform: translateY(100%);

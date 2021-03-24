@@ -8,7 +8,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10;
+  z-index: 500;
   
   background-color: var(--white);
   
@@ -16,12 +16,14 @@
   @include main-transition(transform);
   
   @media (min-width: 768px) {
-    display: none;
-  }
+    display: none;}
+  
 }
 
 .menu-container.is-open {
+ 
   transform: translateX(0);
+  
 }
 
 .menu-toggle {
@@ -43,8 +45,9 @@
 
   @include main-transition(fill);
 
-  &:active, :target  {
+  &:active, &:target, &:focus {
     fill: var(--main-blue);
+    outline: none;
   }
   
   &.js-close-menu {
