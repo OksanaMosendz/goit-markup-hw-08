@@ -33,14 +33,14 @@
     height: 374px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     height: 260px;
   }
 }
 
 .team__img {
-  width: auto;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
